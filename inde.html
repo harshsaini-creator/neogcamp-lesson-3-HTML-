@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>COMPONENT LIBRARY</title>
+    <link rel="stylesheet" href="css.css">
 </head>
 
 <body>
@@ -12,6 +13,7 @@
 
     <p> I am attending neogcamp and i want to make a library . it will make all my projects look Good and Consistent .
     </p>
+
 
     <hr>
 
@@ -30,16 +32,17 @@
     <h2>@containers</h2>
 
     <h3>@fluid container</h3>
-    <p>This is going to be a fluid container. It will go full width of page. With some margin.</p>
+    <p class="container container-fluid">This is going to be a fluid container. It will go full width of page. With some
+        margin.</p>
 
     <h3>@center container</h3>
-    <p>This is going to be a center container. It will go till a given width and center content.</p>
+    <p class="container container-center">This is going to be a center container. It will go till a given width and
+        center content.</p>
     <hr>
 
     <h2>@links</h2>
-    <a href="#">Primary Link</a>
-    <a href="#">Secondary Link</a>
-
+    <a class="primary-link link " href="#">Primary Link</a>
+    <a class="link secondary-link" href="#">Secondary Link</a>
     <hr>
 
     <h2>@lists</h2>
@@ -48,70 +51,74 @@
 
     </p>
 
-    <ul>
+    <ul class="non-bullets">
         <li>item 1</li>
         <li>item 2</li>
         <li>item 3</li>
     </ul>
 
     <h3>Unordered inline List</h3>
-    <ul>
-        <li> inline item 1</li>
-        <li> inline item 2</li>
-        <li> inline item 3</li>
+    <ul class="non-bullets ">
+        <li class="list-inline"> inline item 1</li>
+        <li class="list-inline"> inline item 2</li>
+        <li class="list-inline"> inline item 3</li>
     </ul>
 
     <h3>Reverse Ordered List</h3>
 
-    <ol>
+    <ol reversed>
         <li> Milk</li>
         <li> Eggs </li>
         <li> Break </li>
         </ul>
     </ol>
 
-        <hr>
+    <hr>
 
-        <h2>@NAV BAR</h2>
-        <nav>
-            <div>I AM BRAND</div>
-            <ul>
-                <li><a href="https://www.google.com/">Google Karo</a></li>
-                <li><a href="#">HOME</a></li>
-                <li><a href="#">BLOGS</a></li>
-            </ul>
-        </nav>
-        <hr>
+    <h2>@NAV BAR</h2>
+    <nav class="navigation container">
+        <div class="nav-brand">I AM BRAND</div>
+        <ul class="nav-pills ">
+            <li class="list-inline link-active"><a class="linkk" href="https://www.google.com/">Google Karo</a></li>
+            <li class="list-inline"><a class="linkk" href="#">HOME</a></li>
+            <li class="list-inline"><a class="linkk" href="#">BLOGS</a></li>
+        </ul>
+    </nav>
+    <hr>
 
-        <header>
-            <img src="images/header photo.svg">
-            <h1>Heading Inside Header</h1>
-        </header>
+    <header class="hero">
+        <img class="hero-img" src="images/header photo.svg">
+        <h1 class="hero-heading">Heading <span style="color: var(--primary-color);">Inside</span> Header</h1>
+    </header>
 
-        <hr>
+    <hr>
 
-        <h2>@SECTION </h2>
+    <h2>@SECTION </h2>
 
-        <section>
-            <h3>@WHITE SECTION</h3>
-            <P>THIS WILL HAVE WHITE BACKGROUND</P>
-        </section>
-        <section>
-            <h3>@ OFF WHITE SECTION</h3>
-            <P>THIS WILL HAVE GRAY BACKGROUND</P>
-        </section>
+    <section class="section">
+      <div class="container-center">
+        <h3>@WHITE SECTION</h3>
+        <P>THIS WILL HAVE WHITE BACKGROUND</P>
+      </div>
+    </section>
+    <section class="section ow">
+       <div class="container-center">
+        <h3>@ OFF WHITE SECTION</h3>
+        <P>THIS WILL HAVE GRAY BACKGROUND</P>
+       </div>
+    </section>
 
-        <hr>
+    <hr>
+    <h2>@FOOTER</h2>
+    <footer class="footer">
+        <div class="footer-header">SOME SMALL HEADING INSIDE FOOTER</div>
 
-        <footer>
-            <div>SOME SMALL HEADING INSIDE FOOTER</div>
-
-            <ul>
-                <li>Social One</li>
-                <li>Insta</li>
-                <li>Faceb</li>
-            </ul>
-        </footer>
+        <ul class="social-links non-bullets ">
+            <li class="list-inline"><a class="link" href="#">SOCIAL</a></li>
+            <li class="list-inline"><a class="link" href="#">INSTA</a></li>
+            <li class="list-inline"><a class="link" href="#">FAB</a></li>
+        </ul>
+    </footer>
 
 
 </body>
